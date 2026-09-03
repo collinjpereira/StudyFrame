@@ -1,0 +1,43 @@
+Course content
+45 sections • 323 lectures • 51h 40m total length
+Expand all sections
+Introduction to CompTIA CySA+5 lectures • 43min
+Welcome and Course Overview
+Preview
+12:37
+The Cybersecurity Analyst Role
+Preview
+09:04
+CySA+ CS0-004 Exam Structure and Domains (OBJ. 1.1)
+10:12
+Your Course Roadmap: How to Maximize Your Results
+09:48
+Download your free study guide
+00:41
+Foundational Security Operations5 lectures • 53min
+Introduction to Security Operations Centers (SOC) (OBJ. 1.2)
+10:58
+SOC Roles and Responsibilities
+11:14
+Security Operations Workflows and Processes
+08:39
+Continuous Monitoring Concepts
+11:52
+Shift Operations and Handover Procedures
+10:21
+Risk Management and Security Controls7 lectures • 1hr 13min
+Understanding Risk in Cybersecurity
+09:11
+Risk Concepts: Appetite, Residual, and Inherent Risk
+08:44
+Risk Management Strategies
+10:03
+Security Control Types
+09:57
+Security Control Functions
+11:22
+Policies, Governance, and Service-Level Objectives
+10:38
+Aligning Controls with Business Risk
+13:04
+35 more sections

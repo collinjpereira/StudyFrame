@@ -1,0 +1,46 @@
+/* StudyFrame design tokens. Values are final; retune here rather than in components. */
+
+:root {
+  --color-bg: #161826;
+  --color-surface: #232532;
+  --color-text: #e9e9ed;
+  --color-accent: #9184d9;
+  --color-divider: color-mix(in srgb, #e9e9ed 16%, transparent);
+
+  --color-neutral-100: #f3f5fe;
+  --color-neutral-500: #9397ab;
+  --color-neutral-600: #75798c;
+  --color-neutral-700: #595d6c;
+  --color-neutral-800: #3f424d;
+  --color-neutral-900: #292b31;
+
+  --color-accent-300: #d2cefd;
+  --color-accent-400: #b5abfc;
+  --color-accent-700: #5d5294;
+  --color-accent-900: #2b2741;
+
+  /* Mono palette with no danger role, so the four warning values live here. */
+  --color-warn-text: #c98b96;
+  --color-warn-bright: #f0b7c0;
+  --color-warn-border: #7e2b35;
+  --color-warn-fill: #3a1f26;
+
+  /* Derived surfaces. Named for their role so components never re-mix them. */
+  --surface-chrome: color-mix(in srgb, var(--color-bg) 80%, black);
+  --surface-sidebar: color-mix(in srgb, var(--color-surface) 22%, var(--color-bg));
+  --surface-card: color-mix(in srgb, var(--color-surface) 55%, var(--color-bg));
+  --surface-inset: color-mix(in srgb, var(--color-surface) 38%, var(--color-bg));
+  --surface-done: color-mix(in srgb, var(--color-surface) 45%, var(--color-bg));
+  --surface-dock-active: color-mix(in srgb, var(--color-accent-900) 60%, var(--color-bg));
+
+  --text-secondary: rgba(233, 233, 237, 0.5);
+  --text-muted: rgba(233, 233, 237, 0.4);
+  --text-faint: rgba(233, 233, 237, 0.32);
+  --text-complete: rgba(233, 233, 237, 0.42);
+
+  --hairline: 0 0 0 1px rgba(233, 233, 237, 0.06);
+  --shadow-dock: 0 14px 34px rgba(0, 0, 0, 0.5);
+  --shadow-modal: 0 0 0 1px var(--color-neutral-500), 0 16px 40px rgba(0, 0, 0, 0.65);
+
+  --font-body: "Inter", system-ui, sans-serif;
+}

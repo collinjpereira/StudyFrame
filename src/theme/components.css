@@ -1,0 +1,275 @@
+/* Every interactive element gets a hover tint and a visible focus ring. */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  border-radius: 7px;
+  font-size: 13px;
+  line-height: 1.2;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  color: var(--color-accent-300);
+  border-color: var(--color-accent-700);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: rgba(145, 132, 217, 0.14);
+}
+
+.btn-secondary {
+  color: rgba(233, 233, 237, 0.66);
+  border-color: rgba(233, 233, 237, 0.14);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  color: var(--color-accent-300);
+  border-color: var(--color-accent-700);
+}
+
+.btn-danger:hover:not(:disabled) {
+  color: var(--color-warn-bright);
+  border-color: var(--color-warn-border);
+  background: rgba(126, 43, 53, 0.18);
+}
+
+.btn-sm {
+  padding: 7px 13px;
+  font-size: 12.5px;
+}
+
+/* A text link that reads as part of a sentence. */
+.link {
+  color: var(--color-accent);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--color-accent-300);
+}
+
+.link-quiet {
+  color: var(--text-muted);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.link-quiet:hover {
+  color: var(--color-accent-300);
+}
+
+.icon-btn {
+  display: grid;
+  place-items: center;
+  flex: none;
+  border-radius: 7px;
+  color: rgba(233, 233, 237, 0.26);
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background: var(--color-accent-900);
+  color: var(--color-accent-300);
+}
+
+.icon-btn-danger:hover {
+  background: var(--color-warn-fill);
+  color: var(--color-warn-bright);
+}
+
+.icon-btn-ring {
+  color: rgba(233, 233, 237, 0.55);
+  box-shadow: inset 0 0 0 1px rgba(233, 233, 237, 0.11);
+}
+
+.icon-btn-ring:hover {
+  background: none;
+  color: var(--color-accent-300);
+  box-shadow: inset 0 0 0 1px var(--color-accent-700);
+}
+
+/* Segmented controls: Weeks/Days, Note/Cards, buffer and hours pickers. */
+.seg {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(233, 233, 237, 0.11);
+}
+
+.seg-opt {
+  padding: 7px 16px;
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  background: transparent;
+  cursor: pointer;
+}
+
+.seg-opt + .seg-opt {
+  box-shadow: inset 1px 0 0 rgba(233, 233, 237, 0.11);
+}
+
+.seg-opt:hover {
+  color: var(--color-accent-300);
+}
+
+.seg-opt[aria-pressed="true"] {
+  color: var(--color-accent-300);
+  background: var(--color-accent-900);
+}
+
+.seg-fill {
+  flex: 1;
+  text-align: center;
+  padding: 9px 0;
+  font-size: 13px;
+}
+
+.input {
+  width: 100%;
+  padding: 9px 12px;
+  font-size: 13.5px;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid rgba(233, 233, 237, 0.12);
+  border-radius: 7px;
+  caret-color: var(--color-accent);
+}
+
+.input:hover {
+  border-color: rgba(233, 233, 237, 0.28);
+}
+
+.input:focus-visible {
+  border-color: var(--color-accent);
+  outline-offset: 0;
+}
+
+.input-sm {
+  padding: 6px 9px;
+  font-size: 12.5px;
+}
+
+/* An 18px lecture checkbox. Filled when done, ringed when not. */
+.checkbox {
+  flex: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px var(--color-neutral-700);
+  background: transparent;
+}
+
+.checkbox:hover {
+  box-shadow: inset 0 0 0 1px var(--color-accent);
+}
+
+.checkbox[aria-checked="true"] {
+  background: var(--color-accent);
+  box-shadow: inset 0 0 0 1px var(--color-accent);
+}
+
+/* A raised list row: Today's queue, transfer actions, session rows. */
+.row {
+  background: var(--surface-card);
+  box-shadow: var(--hairline);
+}
+
+.row-hover:hover {
+  background: var(--color-surface);
+}
+
+.tile:hover {
+  background: var(--color-accent-900);
+  color: var(--color-accent-300);
+}
+
+.nav-row:hover {
+  background: var(--color-surface);
+}
+
+.sidebar-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 7px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: rgba(233, 233, 237, 0.38);
+  cursor: pointer;
+}
+
+.sidebar-action:hover {
+  color: var(--color-accent-300);
+}
+
+/* A draggable section block on the week grid. */
+.sec-block {
+  border-radius: 7px;
+  padding: 8px 9px 9px;
+  cursor: grab;
+  background: var(--color-surface);
+}
+
+.sec-block:hover {
+  background: var(--color-accent-900);
+  box-shadow: inset 2px 0 0 var(--color-accent-400), 0 6px 18px rgba(0, 0, 0, 0.55);
+}
+
+/* A day-card item. Completed items are dimmed until hovered. */
+.day-item:hover {
+  background: var(--color-accent-900) !important;
+  opacity: 1 !important;
+}
+
+.week-head:hover {
+  background: rgba(145, 132, 217, 0.08);
+}
+
+.card-open:hover {
+  background: var(--color-accent-900);
+}
+
+/* A dashed invitation: add a course, new workspace, add section. */
+.dashed {
+  border-radius: 11px;
+  cursor: pointer;
+  color: var(--text-complete);
+  box-shadow: inset 0 0 0 1px rgba(233, 233, 237, 0.09);
+}
+
+.dashed:hover {
+  color: var(--color-accent-300);
+  box-shadow: inset 0 0 0 1px var(--color-accent-700);
+}
+
+.launcher-card:hover {
+  background: var(--color-surface);
+  box-shadow: 0 0 0 1px var(--color-accent-700), 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+.titlebar-btn {
+  width: 44px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  color: rgba(233, 233, 237, 0.55);
+}
+
+.titlebar-btn:hover {
+  background: rgba(233, 233, 237, 0.07);
+}
+
+.titlebar-close:hover {
+  background: var(--color-warn-border);
+  color: var(--color-neutral-100);
+}

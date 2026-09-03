@@ -1,0 +1,1125 @@
+{
+  "app": "studyframe",
+  "version": 1,
+  "exportedAt": "2026-09-03T18:13:25.830Z",
+  "spaces": [
+    {
+      "bufferDays": 7,
+      "studyDays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startTime": "19:00",
+      "actuals": {
+        "cysa-s01-l0": 16,
+        "cysa-s02-l0": 11,
+        "cysa-s02-l2": 12
+      },
+      "doneAt": {},
+      "sessions": [
+        {
+          "at": "2026-09-01T20:13:25.831Z",
+          "focusSecs": 3180,
+          "breakSecs": 420,
+          "focusMins": 53,
+          "breaks": 1,
+          "lectures": [
+            {
+              "id": "cysa-s01-l0",
+              "mins": 16
+            },
+            {
+              "id": "cysa-s01-l1",
+              "mins": 9
+            }
+          ]
+        },
+        {
+          "at": "2026-09-02T20:06:45.831Z",
+          "focusSecs": 2640,
+          "breakSecs": 0,
+          "focusMins": 44,
+          "breaks": 0,
+          "lectures": [
+            {
+              "id": "cysa-s02-l0",
+              "mins": 11
+            }
+          ]
+        }
+      ],
+      "notes": {
+        "cysa-s08-l7": "Brute force in the logs = many 4625s then one 4624 from the same source.\n\n03:40 — baseline first. Ten failures at 09:00 on a Monday is a human; ten a second is a script.\n09:15 — check the workstation name field. Empty or garbage usually means it isn't a domain machine.\n\nExam angle: they want you to spot the SUCCESS after the failures. That's the pivot point.",
+        "cysa-s02-l1": "SOC tiers, plainly:\nT1 triages alerts and escalates. T2 investigates and scopes. T3 hunts and builds detections.\n\n06:20 — the threat intel analyst and the incident responder are specialist roles, not tiers.",
+        "cysa-s05-l1": "ZTNA = never trust, always verify. Three legs: identity (IAM), device trust, microsegmentation.\n\n04:55 — the point of microsegmentation is blast radius, not prevention.\nSASE is ZTNA + SD-WAN + SWG + CASB delivered from the cloud edge.",
+        "lab-l1-l0": "Security Onion 2.4, eval mode, 16 GB RAM or it thrashes.\n\nSet the management interface FIRST — changing it after is a reinstall.\n`sudo so-status` to check the stack came up."
+      },
+      "cards": [
+        {
+          "id": "cy1",
+          "lectureId": "cysa-s08-l7",
+          "q": "Which Windows event IDs mark a successful brute force?",
+          "a": "A run of 4625 (failed logon) from one source, then a 4624 (success). The 4624 is the compromise point."
+        },
+        {
+          "id": "cy2",
+          "lectureId": "cysa-s05-l1",
+          "q": "ZTNA vs SASE — what's the difference?",
+          "a": "ZTNA is the access model (verify identity + device, microsegment). SASE is the delivery architecture: ZTNA plus SD-WAN, SWG and CASB from the cloud edge."
+        },
+        {
+          "id": "cy3",
+          "lectureId": "cysa-s02-l1",
+          "q": "What does a SOC tier 3 analyst do that tier 2 doesn't?",
+          "a": "Proactive threat hunting and detection engineering — tier 2 investigates alerts that already fired."
+        },
+        {
+          "id": "cy4",
+          "lectureId": "lab-l1-l0",
+          "q": "First thing to configure on a fresh Security Onion install?",
+          "a": "The management interface. Changing it afterwards means reinstalling."
+        }
+      ],
+      "id": "ws-cysa",
+      "name": "CompTIA CySA+ CS0-004",
+      "examDate": "2026-10-17",
+      "hoursPerWeek": 5,
+      "log": [
+        {
+          "mins": 44
+        },
+        {
+          "mins": 22
+        },
+        {
+          "mins": 56
+        },
+        {
+          "mins": 73
+        },
+        {
+          "mins": 50
+        },
+        {
+          "mins": 39
+        },
+        {
+          "mins": 64
+        },
+        {
+          "mins": 68
+        },
+        {
+          "mins": 6
+        },
+        {
+          "mins": 104
+        },
+        {
+          "mins": 16
+        },
+        {
+          "mins": 14
+        },
+        {
+          "mins": 73
+        },
+        {
+          "mins": 4
+        },
+        {
+          "mins": 28
+        },
+        {
+          "mins": 2
+        },
+        {
+          "mins": 7
+        },
+        {
+          "mins": 50
+        },
+        {
+          "mins": 68
+        },
+        {
+          "mins": 60
+        },
+        {
+          "mins": 55
+        },
+        {
+          "mins": 5
+        },
+        {
+          "mins": 46
+        },
+        {
+          "mins": 52
+        },
+        {
+          "mins": 15
+        },
+        {
+          "mins": 51
+        },
+        {
+          "mins": 44
+        },
+        {
+          "mins": 0
+        }
+      ],
+      "courses": [
+        {
+          "id": "cysa",
+          "title": "CompTIA CySA+ (CS0-004) Complete Course & Practice Exam",
+          "provider": "Udemy · Jason Dion",
+          "source": "Imported from udemy.com/course/comptia-cysa-003 · 45 sections, 323 lectures, 51h 40m on the page · 10 sections read in full",
+          "sections": [
+            {
+              "id": "cysa-s01",
+              "title": "Introduction to CompTIA CySA+",
+              "week": 1,
+              "lectures": [
+                {
+                  "id": "cysa-s01-l0",
+                  "title": "Welcome and Course Overview",
+                  "mins": 13,
+                  "done": true
+                },
+                {
+                  "id": "cysa-s01-l1",
+                  "title": "The Cybersecurity Analyst Role",
+                  "mins": 9,
+                  "done": true
+                },
+                {
+                  "id": "cysa-s01-l2",
+                  "title": "CySA+ CS0-004 Exam Structure and Domains",
+                  "mins": 10,
+                  "done": true
+                },
+                {
+                  "id": "cysa-s01-l3",
+                  "title": "Your Course Roadmap: How to Maximize Your Results",
+                  "mins": 10,
+                  "done": true
+                },
+                {
+                  "id": "cysa-s01-l4",
+                  "title": "Download your free study guide",
+                  "mins": 1,
+                  "done": true
+                }
+              ]
+            },
+            {
+              "id": "cysa-s02",
+              "title": "Foundational Security Operations",
+              "week": 1,
+              "lectures": [
+                {
+                  "id": "cysa-s02-l0",
+                  "title": "Introduction to Security Operations Centers (SOC)",
+                  "mins": 11,
+                  "done": true
+                },
+                {
+                  "id": "cysa-s02-l1",
+                  "title": "SOC Roles and Responsibilities",
+                  "mins": 11,
+                  "done": true
+                },
+                {
+                  "id": "cysa-s02-l2",
+                  "title": "Security Operations Workflows and Processes",
+                  "mins": 9,
+                  "done": true
+                },
+                {
+                  "id": "cysa-s02-l3",
+                  "title": "Continuous Monitoring Concepts",
+                  "mins": 12,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s02-l4",
+                  "title": "Shift Operations and Handover Procedures",
+                  "mins": 10,
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "cysa-s03",
+              "title": "Risk Management and Security Controls",
+              "week": 2,
+              "lectures": [
+                {
+                  "id": "cysa-s03-l0",
+                  "title": "Understanding Risk in Cybersecurity",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s03-l1",
+                  "title": "Risk Concepts: Appetite, Residual, and Inherent Risk",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s03-l2",
+                  "title": "Risk Management Strategies",
+                  "mins": 10,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s03-l3",
+                  "title": "Security Control Types",
+                  "mins": 10,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s03-l4",
+                  "title": "Security Control Functions",
+                  "mins": 11,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s03-l5",
+                  "title": "Policies, Governance, and Service-Level Objectives",
+                  "mins": 11,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s03-l6",
+                  "title": "Aligning Controls with Business Risk",
+                  "mins": 13,
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "cysa-s04",
+              "title": "System Infrastructure Concepts",
+              "week": 3,
+              "lectures": [
+                {
+                  "id": "cysa-s04-l0",
+                  "title": "Infrastructure and System Architecture Overview",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s04-l1",
+                  "title": "Cloud Native Architecture",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s04-l2",
+                  "title": "Virtualization Technologies and Security",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s04-l3",
+                  "title": "Containerization Concepts (Docker, Kubernetes)",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s04-l4",
+                  "title": "Application Programming Interfaces (API) Concepts",
+                  "mins": 8,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s04-l5",
+                  "title": "Demo: Detecting API Enumeration Through Log Analysis",
+                  "mins": 8,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s04-l6",
+                  "title": "Device Management Concepts",
+                  "mins": 10,
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "cysa-s05",
+              "title": "Network Architecture Concepts",
+              "week": 3,
+              "lectures": [
+                {
+                  "id": "cysa-s05-l0",
+                  "title": "Network Architecture Fundamentals",
+                  "mins": 8,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s05-l1",
+                  "title": "Zero Trust Network Architecture (ZTNA)",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s05-l2",
+                  "title": "Secure Access Service Edge (SASE)",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s05-l3",
+                  "title": "Hybrid Cloud Networking",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s05-l4",
+                  "title": "Network Segmentation and Isolation",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s05-l5",
+                  "title": "Network Security Best Practices",
+                  "mins": 10,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s05-l6",
+                  "title": "Demo: Detecting C2 Beaconing with Wireshark",
+                  "mins": 10,
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "cysa-s06",
+              "title": "Introduction to Critical Infrastructure",
+              "week": 4,
+              "lectures": [
+                {
+                  "id": "cysa-s06-l0",
+                  "title": "Introduction to Critical Infrastructure",
+                  "mins": 8,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s06-l1",
+                  "title": "Operational Technology (OT) Fundamentals",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s06-l2",
+                  "title": "Industrial Control Systems (ICS)",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s06-l3",
+                  "title": "SCADA Systems",
+                  "mins": 10,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s06-l4",
+                  "title": "OT/ICS/SCADA Threat Landscape",
+                  "mins": 11,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s06-l5",
+                  "title": "Security Considerations for Critical Infrastructure",
+                  "mins": 11,
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "cysa-s07",
+              "title": "Operating System Security",
+              "week": 4,
+              "lectures": [
+                {
+                  "id": "cysa-s07-l0",
+                  "title": "Operating System Security Concepts",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s07-l1",
+                  "title": "System Hardening Fundamentals",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s07-l2",
+                  "title": "Windows File Structure and Critical Files",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s07-l3",
+                  "title": "Linux File Structure and Critical Files",
+                  "mins": 11,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s07-l4",
+                  "title": "System Processes and Services",
+                  "mins": 10,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s07-l5",
+                  "title": "Demo: Investigating a Suspicious Process",
+                  "mins": 12,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s07-l6",
+                  "title": "OS Security Configuration Best Practices",
+                  "mins": 10,
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "cysa-s08",
+              "title": "Logging Concepts and Analysis",
+              "week": 5,
+              "lectures": [
+                {
+                  "id": "cysa-s08-l0",
+                  "title": "Fundamentals of Security Logging",
+                  "mins": 8,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s08-l1",
+                  "title": "Log Ingestion Methods and Strategies",
+                  "mins": 8,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s08-l2",
+                  "title": "Log Configuration Best Practices",
+                  "mins": 8,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s08-l3",
+                  "title": "Ensuring Log Integrity and Security",
+                  "mins": 8,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s08-l4",
+                  "title": "Time Synchronization and NTP",
+                  "mins": 8,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s08-l5",
+                  "title": "Log Retention Policies and Compliance",
+                  "mins": 8,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s08-l6",
+                  "title": "Basic Log Analysis Techniques",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s08-l7",
+                  "title": "Demo: Detecting a Brute Force Attack through Log Analysis",
+                  "mins": 13,
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "cysa-s09",
+              "title": "Identity and Access Management",
+              "week": 6,
+              "lectures": [
+                {
+                  "id": "cysa-s09-l0",
+                  "title": "Identity and Access Management Fundamentals",
+                  "mins": 10,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s09-l1",
+                  "title": "Privileged Access Management (PAM)",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s09-l2",
+                  "title": "Authentication Methods and Technologies",
+                  "mins": 10,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s09-l3",
+                  "title": "Authorization Models and Mechanisms",
+                  "mins": 10,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s09-l4",
+                  "title": "Secrets Management Best Practices",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s09-l5",
+                  "title": "IAM Security Considerations",
+                  "mins": 10,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s09-l6",
+                  "title": "Demo: Detecting Privilege Escalation Through Group Changes",
+                  "mins": 13,
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "cysa-s10",
+              "title": "Data Protection and Encryption",
+              "week": 7,
+              "lectures": [
+                {
+                  "id": "cysa-s10-l0",
+                  "title": "Introduction to Data Protection and Encryption",
+                  "mins": 7,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s10-l1",
+                  "title": "Data Protection Concepts and Strategies",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s10-l2",
+                  "title": "Encryption Fundamentals",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s10-l3",
+                  "title": "Symmetric vs. Asymmetric Encryption",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s10-l4",
+                  "title": "Encryption Techniques and Applications",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s10-l5",
+                  "title": "Data Classification and Handling",
+                  "mins": 9,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s10-l6",
+                  "title": "Detecting Data Exfiltration",
+                  "mins": 10,
+                  "done": false
+                },
+                {
+                  "id": "cysa-s10-l7",
+                  "title": "Demo: Detecting Data Exfiltration Using Encrypted Archives",
+                  "mins": 12,
+                  "done": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lab",
+          "title": "Blue-team home lab",
+          "provider": "Own plan · Security Onion + Sysmon",
+          "source": "Written by hand",
+          "sections": [
+            {
+              "id": "lab-l1",
+              "title": "Lab build",
+              "week": 2,
+              "lectures": [
+                {
+                  "id": "lab-l1-l0",
+                  "title": "Security Onion install",
+                  "mins": 38,
+                  "done": true
+                },
+                {
+                  "id": "lab-l1-l1",
+                  "title": "Sysmon on the Windows host",
+                  "mins": 24,
+                  "done": false
+                },
+                {
+                  "id": "lab-l1-l2",
+                  "title": "Log forwarding into the stack",
+                  "mins": 29,
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "lab-l2",
+              "title": "Detection practice",
+              "week": 5,
+              "lectures": [
+                {
+                  "id": "lab-l2-l0",
+                  "title": "Replay a PCAP through Zeek",
+                  "mins": 33,
+                  "done": false
+                },
+                {
+                  "id": "lab-l2-l1",
+                  "title": "Write three Sigma rules",
+                  "mins": 41,
+                  "done": false
+                },
+                {
+                  "id": "lab-l2-l2",
+                  "title": "Tune out the noise",
+                  "mins": 27,
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "lab-l3",
+              "title": "Exam-week revision",
+              "week": 8,
+              "lectures": [
+                {
+                  "id": "lab-l3-l0",
+                  "title": "Rebuild the lab from notes",
+                  "mins": 55,
+                  "done": false
+                },
+                {
+                  "id": "lab-l3-l1",
+                  "title": "Speed-run the ATT&CK matrix",
+                  "mins": 35,
+                  "done": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bufferDays": 7,
+      "studyDays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startTime": "19:00",
+      "actuals": {},
+      "doneAt": {},
+      "sessions": [],
+      "notes": {
+        "pysec-y1-l0": "Non-greedy `.*?` is the one I keep forgetting.\n\nUse named groups — `(?P<ip>\\d+\\.\\d+\\.\\d+\\.\\d+)` — and the parse code reads itself later."
+      },
+      "cards": [
+        {
+          "id": "py1",
+          "lectureId": "pysec-y1-l0",
+          "q": "Greedy vs non-greedy quantifier?",
+          "a": "`.*` takes as much as possible; `.*?` takes as little as possible. Use non-greedy when matching up to a delimiter."
+        }
+      ],
+      "id": "ws-py",
+      "name": "Python for security",
+      "examDate": "",
+      "hoursPerWeek": 3,
+      "log": [
+        {
+          "mins": 61
+        },
+        {
+          "mins": 47
+        },
+        {
+          "mins": 17
+        },
+        {
+          "mins": 3
+        },
+        {
+          "mins": 33
+        },
+        {
+          "mins": 70
+        },
+        {
+          "mins": 55
+        },
+        {
+          "mins": 24
+        },
+        {
+          "mins": 22
+        },
+        {
+          "mins": 77
+        },
+        {
+          "mins": 37
+        },
+        {
+          "mins": 16
+        },
+        {
+          "mins": 0
+        },
+        {
+          "mins": 7
+        },
+        {
+          "mins": 12
+        },
+        {
+          "mins": 69
+        },
+        {
+          "mins": 42
+        },
+        {
+          "mins": 13
+        },
+        {
+          "mins": 36
+        },
+        {
+          "mins": 56
+        },
+        {
+          "mins": 30
+        },
+        {
+          "mins": 29
+        },
+        {
+          "mins": 54
+        },
+        {
+          "mins": 73
+        },
+        {
+          "mins": 5
+        },
+        {
+          "mins": 51
+        },
+        {
+          "mins": 44
+        },
+        {
+          "mins": 0
+        }
+      ],
+      "courses": [
+        {
+          "id": "pysec",
+          "title": "Automate the Boring Stuff, security cut",
+          "provider": "Udemy · Al Sweigart",
+          "source": "Imported from a link",
+          "sections": [
+            {
+              "id": "pysec-y1",
+              "title": "Files and regex",
+              "week": 1,
+              "lectures": [
+                {
+                  "id": "pysec-y1-l0",
+                  "title": "Regex you keep forgetting",
+                  "mins": 21,
+                  "done": true
+                },
+                {
+                  "id": "pysec-y1-l1",
+                  "title": "Walking a directory tree",
+                  "mins": 15,
+                  "done": true
+                },
+                {
+                  "id": "pysec-y1-l2",
+                  "title": "Parsing a log file",
+                  "mins": 24,
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "pysec-y2",
+              "title": "APIs and requests",
+              "week": 3,
+              "lectures": [
+                {
+                  "id": "pysec-y2-l0",
+                  "title": "Auth headers and retries",
+                  "mins": 18,
+                  "done": false
+                },
+                {
+                  "id": "pysec-y2-l1",
+                  "title": "Pulling from a threat feed",
+                  "mins": 22,
+                  "done": false
+                },
+                {
+                  "id": "pysec-y2-l2",
+                  "title": "Rate limits",
+                  "mins": 11,
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "pysec-y3",
+              "title": "Small tools",
+              "week": 5,
+              "lectures": [
+                {
+                  "id": "pysec-y3-l0",
+                  "title": "An IOC enrichment script",
+                  "mins": 34,
+                  "done": false
+                },
+                {
+                  "id": "pysec-y3-l1",
+                  "title": "Packaging it for the team",
+                  "mins": 19,
+                  "done": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bufferDays": 7,
+      "studyDays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startTime": "19:00",
+      "actuals": {},
+      "doneAt": {},
+      "sessions": [],
+      "notes": {
+        "gram-g1-l0": "Sein for movement and change of state: gehen, fahren, kommen, werden, sterben.\nEverything else takes haben. Mnemonic: if you moved or you changed, you *are* it."
+      },
+      "cards": [
+        {
+          "id": "de1",
+          "lectureId": "gram-g1-l0",
+          "q": "Which verbs form the Perfekt with sein?",
+          "a": "Verbs of motion (gehen, fahren, kommen) and change of state (werden, sterben, aufwachen). Everything else takes haben."
+        }
+      ],
+      "id": "ws-de",
+      "name": "German A2",
+      "examDate": "2026-12-08",
+      "hoursPerWeek": 3,
+      "log": [
+        {
+          "mins": 5
+        },
+        {
+          "mins": 74
+        },
+        {
+          "mins": 21
+        },
+        {
+          "mins": 68
+        },
+        {
+          "mins": 17
+        },
+        {
+          "mins": 0
+        },
+        {
+          "mins": 48
+        },
+        {
+          "mins": 24
+        },
+        {
+          "mins": 26
+        },
+        {
+          "mins": 59
+        },
+        {
+          "mins": 67
+        },
+        {
+          "mins": 67
+        },
+        {
+          "mins": 0
+        },
+        {
+          "mins": 14
+        },
+        {
+          "mins": 74
+        },
+        {
+          "mins": 55
+        },
+        {
+          "mins": 6
+        },
+        {
+          "mins": 4
+        },
+        {
+          "mins": 20
+        },
+        {
+          "mins": 0
+        },
+        {
+          "mins": 34
+        },
+        {
+          "mins": 58
+        },
+        {
+          "mins": 30
+        },
+        {
+          "mins": 69
+        },
+        {
+          "mins": 43
+        },
+        {
+          "mins": 51
+        },
+        {
+          "mins": 44
+        },
+        {
+          "mins": 0
+        }
+      ],
+      "courses": [
+        {
+          "id": "gram",
+          "title": "A2 grammar, week by week",
+          "provider": "Deutsch mit Marija",
+          "source": "Written by hand",
+          "sections": [
+            {
+              "id": "gram-g1",
+              "title": "Perfekt tense",
+              "week": 1,
+              "lectures": [
+                {
+                  "id": "gram-g1-l0",
+                  "title": "Haben vs sein",
+                  "mins": 14,
+                  "done": true
+                },
+                {
+                  "id": "gram-g1-l1",
+                  "title": "Irregular participles",
+                  "mins": 18,
+                  "done": false
+                },
+                {
+                  "id": "gram-g1-l2",
+                  "title": "Drills",
+                  "mins": 25,
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "gram-g2",
+              "title": "Dative case",
+              "week": 3,
+              "lectures": [
+                {
+                  "id": "gram-g2-l0",
+                  "title": "Prepositions with dative",
+                  "mins": 16,
+                  "done": false
+                },
+                {
+                  "id": "gram-g2-l1",
+                  "title": "Pronoun tables",
+                  "mins": 12,
+                  "done": false
+                },
+                {
+                  "id": "gram-g2-l2",
+                  "title": "Drills",
+                  "mins": 25,
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "gram-g3",
+              "title": "Subordinate clauses",
+              "week": 6,
+              "lectures": [
+                {
+                  "id": "gram-g3-l0",
+                  "title": "weil, dass, wenn",
+                  "mins": 19,
+                  "done": false
+                },
+                {
+                  "id": "gram-g3-l1",
+                  "title": "Word order practice",
+                  "mins": 22,
+                  "done": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

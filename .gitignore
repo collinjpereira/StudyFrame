@@ -1,0 +1,11 @@
+node_modules
+dist
+src-tauri/target
+src-tauri/gen
+
+# Regenerable intermediate from scripts/render-icon.mjs
+scripts/icon-1024.png
+
+# OS cruft
+.DS_Store
+Thumbs.db
