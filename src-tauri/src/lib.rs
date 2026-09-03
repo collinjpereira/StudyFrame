@@ -63,6 +63,14 @@ fn take_pending_import(app: AppHandle) -> Option<String> {
     slot.take()
 }
 
+/// Destroying the window is not enough to end the process: the single-instance
+/// plugin keeps listening for a relaunch for as long as the app is alive, so an
+/// explicit exit is required once the library has been flushed.
+#[tauri::command]
+fn quit_app(app: AppHandle) {
+    app.exit(0);
+}
+
 fn import_arg_from(args: &[String]) -> Option<String> {
     args.iter()
         .skip(1)
@@ -143,6 +151,7 @@ pub fn run() {
             load_settings,
             save_settings,
             take_pending_import,
+            quit_app,
             set_last_workspace,
             read_text_file,
             write_text_file,

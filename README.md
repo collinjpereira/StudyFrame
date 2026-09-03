@@ -36,7 +36,7 @@ A native Windows app with the memory footprint of a browser tab (roughly
 
 ## Install
 
-1. Download **`StudyFrame_1.0.0_x64-setup.exe`** from the
+1. Download **`StudyFrame_1.0.1_x64-setup.exe`** from the
    [Releases](../../releases) page.
 2. Double-click it. No admin prompt, no Node, no Rust, nothing else to set up
    first — it installs to your own user account.
@@ -175,8 +175,8 @@ npm run tauri build          # the installers
 Output:
 
 ```
-src-tauri/target/release/bundle/nsis/StudyFrame_1.0.0_x64-setup.exe
-src-tauri/target/release/bundle/msi/StudyFrame_1.0.0_x64_en-US.msi
+src-tauri/target/release/bundle/nsis/StudyFrame_1.0.1_x64-setup.exe
+src-tauri/target/release/bundle/msi/StudyFrame_1.0.1_x64_en-US.msi
 ```
 
 Ship the NSIS one for consumers, the MSI for anyone deploying by policy.
